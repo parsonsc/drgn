@@ -1,0 +1,1416 @@
+// Modal
+.modal-wrapper.styled .modal {
+	position: relative;
+    background-color: white;
+    margin: 10vh auto;
+    padding: 90px; 
+    border: none;
+    width: 50%;
+    transition: all 2s ease;
+}
+.modal-wrapper.styled .modal .close-modal {
+	color: $yellow;
+	top: 40px;
+	right: 40px;
+	font-size: 4em;
+}
+.modal-ready {
+	display: none;
+}
+.modal-wrapper.styled.show .modal-ready {
+	display: block;
+}
+
+// About section
+section.about {
+	padding: 150px 0 0;
+}
+section.about .container {
+	position: relative;
+}
+section.about .can {
+	width: 370px;
+	margin: 0 auto;
+	display: block;
+}
+
+section.about .content_text_block {
+	width: 465px;
+	padding-top: 100px;
+}
+section.about .content_text_block h2 {
+	color: $yellow;
+	font-size: 40px;
+}
+section.about .content_text_block a {
+	@include cta;
+}
+
+// Ingredients
+section.ingredients:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 500px;
+	background: url(../images/layout/letters.png) center no-repeat;
+	background-size: 100%;
+	top: -10%;
+    right: -60%;
+}
+section.ingredients header {
+	text-align: center;
+}
+section.ingredients header h2 {
+	font-size: 40px;
+	color: $yellow;
+	margin-bottom: 5px;
+}
+section.ingredients header p {
+	color: white;
+	font-size: 20px;
+}
+.ingredient {
+	padding: 60px 0 100px;
+	overflow: hidden;
+	width: 100%;
+}
+.ingredient:before {
+	// content: "";
+	// position: absolute;
+	// width: 100%;
+	// height: 33px;
+	// background: url(../images/ingredients_arrow.png) center no-repeat;
+	// background-size: 37px;
+	// bottom: 80px;
+	// left: 0;	
+}
+.ingredient .ingredient_image img {
+	width: 188px;
+	margin: 0 auto;
+}
+.ingredient .ingredient_copy {
+	color: white;
+}
+
+// Ingredients carousel
+.owl-thumbs ul {
+	display: table;
+	width: 100%;
+}
+.owl-thumbs ul li {
+	padding: 30px;
+	display: table-cell;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	height: 190px;
+	width: 190px;
+	position: relative;
+}
+.owl-thumbs ul li .thumb_icon {
+
+}
+.owl-thumbs ul li span {
+	color: white;
+	position: absolute;
+
+}
+
+.owl-thumbs ul li.black {
+	background: url(../images/ingredients/black.svg) 0 0 no-repeat;
+	&:hover {
+		background: url(../images/ingredients/black_yellow.svg) 0 0 no-repeat;
+	}
+}
+.owl-thumbs ul li.ginseng {
+	background: url(../images/ingredients/ginseng.svg) 0 0 no-repeat;
+	&:hover {
+		background: url(../images/ingredients/ginseng_yellow.svg) 0 0 no-repeat;
+	}
+}
+.owl-thumbs ul li.electrolyte {
+	background: url(../images/ingredients/electrolyte.svg) 0 0 no-repeat;
+	&:hover {
+		background: url(../images/ingredients/electrolyte_yellow.svg) 0 0 no-repeat;
+	}
+}
+.owl-thumbs ul li.ginger {
+	background: url(../images/ingredients/ginger.svg) 0 0 no-repeat;
+	&:hover {
+		background: url(../images/ingredients/ginger_yellow.svg) 0 0 no-repeat;
+	}
+}
+.owl-thumbs ul li.glutamine {
+	background: url(../images/ingredients/glutamine.svg) 0 0 no-repeat;
+	&:hover {
+		background: url(../images/ingredients/glutamine_yellow.svg) 0 0 no-repeat;
+	}
+}
+.owl-thumbs ul li.vitamins {
+	background: url(../images/ingredients/vitamins.svg) 0 0 no-repeat;
+	&:hover {
+		background: url(../images/ingredients/vitamins_yellow.svg) 0 0 no-repeat;
+	}
+}
+.owl-thumbs ul li.tumeric {
+	background: url(../images/ingredients/black.svg) 0 0 no-repeat;
+	&:hover {
+		background: url(../images/ingredients/black_yellow.svg) 0 0 no-repeat;
+	}
+}
+
+
+
+// Free from
+section.ingredients .free_from {
+	padding: 0;
+	color: white;
+	margin-top: 160px;
+}
+section.ingredients .free_from:before {
+	content: "";
+    background: white;
+    width: 520px;
+    height: 2px;
+    position: relative;
+    display: block;
+    margin: 0 auto 75px;
+}
+section.ingredients .free_from header {
+	color: white;
+	text-align: center;
+	padding: 0 0 40px;
+
+	h3 {
+		@include josefin_semi_bold;
+		font-size: 27px;
+		text-transform: uppercase;
+	}
+}
+section.ingredients .free_from .free_from_image {
+	overflow: hidden;
+}
+section.ingredients .free_from img {
+	float: left;
+	width: 130px;
+	margin-right: 50px;
+}
+section.ingredients .free_from h5 {
+	margin-bottom: 15px;
+}
+
+// Events 
+.events_grid {
+
+}
+.events_grid .event {
+	padding: 100px;
+	overflow: hidden;
+}
+.event .event_details {
+
+}
+.event {
+	overflow: hidden;
+	color: white;
+	padding: 100px 100px;
+	margin-bottom: 10px;
+	background-size: cover!important;
+}
+.event a.cta {
+	float: right;
+	color: white;
+	margin: 0;
+}
+.event .modal-window {
+	display: none;
+}
+
+// Arrows 
+.homepage_main {
+	position: relative;
+}
+.arrows {
+	position: absolute;
+	z-index: 9;	
+}
+.arrows.yellow_arrows {
+	top: 0;
+	right: 10%;
+}
+.arrows_content {
+	position: relative;
+	top: -20px;
+	right: 0;
+}
+.arrows.yellow_arrows .inner_content {
+	position: relative;
+}
+.arrows.yellow_arrows img {
+	width: 272px;
+	right: 0;
+	position: absolute;
+}
+.arrows.white_arrows {
+	width: 100%;
+	height: 80%;
+	z-index: 0;
+	left: 0;
+}
+.arrows.white_arrows span { 
+	position: absolute;
+}
+.arrows.white_arrows span.white_arrow_01 {
+	width: 60px;
+	top: 100px;
+	left: 0px;
+}
+.arrows.white_arrows span.white_arrow_02 {
+	width: 85px;
+	top: 55%;
+	left: 32%;
+}
+.arrows.white_arrows span.white_arrow_03 {
+	width: 60px;
+	top: 70%;
+	left: 105%;
+}
+.arrows.white_arrows span.white_arrow_04 {
+	width: 50px;
+	top: 95%;
+	left: -5%;
+}
+.arrows.white_arrows ul li {
+	display: block;
+	position: absolute;
+}
+.arrows.white_arrows ul li.arrow_01 {
+	left: 0;
+}
+
+// Arrows - Our Story
+.page-template-Our-Story-Page .arrows.white_arrows span.white_arrow_01 {
+	width: 50px;
+	top: 0;
+	left: 90%;
+}
+.page-template-Our-Story-Page .arrows.white_arrows span.white_arrow_02 {
+	width: 50px;
+	top: 35%;
+	left: 5%;
+}
+.page-template-Our-Story-Page .arrows.white_arrows span.white_arrow_03 {
+	width: 50px;
+	top: 75%;
+	left: 105%;
+}
+.page-template-Our-Story-Page .arrows.white_arrows span.white_arrow_04 {
+	width: 50px;
+	top: 95%;
+	left: -5%;
+}
+
+// Arrows - Trade 
+.page-template-trade-page .arrows.white_arrows span.white_arrow_01 {
+	width: 50px;
+	top: 0;
+	left: 90%;
+}
+.page-template-trade-page .arrows.white_arrows span.white_arrow_02 {
+	width: 50px;
+	top: 35%;
+	left: 5%;
+}
+.page-template-trade-page .arrows.white_arrows span.white_arrow_03 {
+	width: 50px;
+	top: 75%;
+	left: 105%;
+}
+.page-template-trade-page .arrows.white_arrows span.white_arrow_04 {
+	width: 50px;
+	top: 95%;
+	left: -5%;
+}
+
+// Arrows - Social
+.page-template-social-page .arrows.white_arrows span.white_arrow_01 {
+	width: 50px;
+	top: 5%;
+	left: 90%;
+}
+.page-template-social-page .arrows.white_arrows span.white_arrow_02 {
+	width: 50px;
+	top: 15%;
+	left: 5%;
+}
+.page-template-social-page .arrows.white_arrows span.white_arrow_03 {
+	width: 50px;
+	top: 35%;
+	left: 90%;
+}
+.page-template-social-page .arrows.white_arrows span.white_arrow_04 {
+	width: 50px;
+	top: 55%;
+	left: 5%;
+}
+
+// Banner - Hero banner
+.banner {
+	clear: both;
+	position: relative;
+}
+.banner_wrapper {
+	position: relative;
+}
+.banner_item {
+	// background-size: cover!important;
+}
+.banner .banner_content {
+	padding: 140px;
+	text-align: center;
+
+	h1 {
+		color: $yellow;
+		margin: 0;
+	}
+}
+.banner_mobile {
+	display: none;
+}
+
+
+
+
+// Instagram feed 
+.insta_feed {
+	padding: 0;
+}
+.insta_feed  ul li {
+	width: 25%;
+	display: block;
+	float: left;
+}
+.insta_feed  ul li img {
+	width: 100%;
+	display: block;
+}
+
+
+// Twitter Feed
+.twitter_feed .feed_content {
+	// max-width: 960px;
+	margin: 0 auto;
+}
+.twitter_feed ul {
+	background: $black;
+	padding: 50px 75px;
+}
+.twitter_feed ul li {
+	color: white;
+	display: block;
+	margin-bottom: 35px;
+}
+.twitter_feed ul li:last-child {
+	margin-bottom: 0;
+}
+.twitter_feed ul li span.handle {
+	color: $yellow;
+}
+.twitter_handle {
+	padding: 15px 0;
+	clear: both;
+}
+.twitter_handle a {
+	color: black;
+	float: left;
+}
+.twitter_handle a.twitter_link {
+	float: right;
+}
+.twitter_handle a.twitter_handle_link {
+
+}
+
+.twitter_feed .aiwidgetscss .imgalign {
+	display: none;
+}
+
+.twitter_feed {
+
+	.tweettext, .widget .tweettext {
+		color: white;
+	}
+	
+	.aiwidgetscss .tweet_author_name a, .widget .tweet_author_name a,
+	.tweet_author_name a {
+		color: $yellow!important;
+	}
+	.twitter_feed .tweettext a, .twitter_feed .widget .tweettext a,
+	.aiwidgetscss .tweet_author a, .widget .tweet_author a {
+		color: $yellow!important;
+	}
+	.widget-title,
+	.aiwidget-title {
+		display: none;
+	}
+	.tweettext a, .widget .tweettext a {
+		color: white;
+	}
+	.thinkTwitFollow {
+		display: none;
+	}
+}
+
+
+
+
+
+// Story timeline 
+.story_timeline {
+	
+}
+.story_timeline ul {
+	overflow: hidden;
+	position: relative;
+}
+.story_timeline ul:before {
+	content:"";
+	position: absolute;
+	width: 2px;
+	background: $black;
+	height: 100%;
+	left: 50%;
+}
+.story_timeline ul li {
+	display: block;
+	padding: 50px 0;
+	overflow: hidden;
+	position: relative;
+}
+.story_timeline ul li:after {
+	content: "";
+	position: absolute;
+	width: 10px;	
+	height: 10px;
+	left: 49.7%;
+	top: 48%;
+	background: $black;
+	border-radius: 50%;
+}
+.story_timeline ul li:nth-child(even) .timeline_image,
+.story_timeline ul li:nth-child(even) .timeline_image img {
+	float: left;
+}
+.story_timeline ul li:nth-child(even) .text {
+	float: right;
+}
+.timeline_info {
+	padding: 85px 45px 35px 35px;
+}
+.timeline_info h2 {
+	text-transform: uppercase;
+	margin-bottom: 35px;
+}
+
+.timeline_image img {
+	float: left;
+}
+.timeline_image.right img {
+	float: right;
+}
+
+// Story banner
+.story_drgn {
+	padding: 100px 0 40px;
+	background-position: bottom;
+}
+.story_drgn .story_drgn_content {
+	width: 600px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.story_drgn .story_drgn_content header {
+	text-align: center;
+	margin-bottom: 100px;
+}
+.story_drgn .story_drgn_content header img {
+	width: 290px;
+	margin: 0 auto;
+}
+.story_drgn .story_drgn_content .story_drgn_item {
+	text-align: center;
+}
+.story_drgn .story_drgn_content .story_drgn_item h4 {
+	@include josefin_bold;
+	font-size: 40px;
+	color: white;
+	margin-top: 60px;
+}
+
+// News article 
+.news_article .container{
+	position: relative;
+}
+.news_article .news_item .item_content {
+	background: white;
+	padding: 100px;
+	max-width:900px;
+	overflow: hidden;
+}
+.item_content_copy {
+	width: 455px;
+	float: left;
+
+	h1 {
+		@include josefin_semi_bold;
+		font-size: 27px;
+	}
+}
+.item_content_copy .cta {
+	font-size: 23px;
+	margin-top: 50px;
+	padding: 10px 85px;
+}
+.article_image {
+	position: absolute;
+	top: 80px;
+	right: 0;
+}
+
+
+// Related News
+.single-news_article .related_news {
+	margin-top: 30px;
+}
+.more_news_grid {
+	overflow: hidden;
+	margin-bottom: 75px;
+}
+.more_news_grid ul li a {
+	color: $black;
+}
+.related_news ul{
+	overflow: hidden;
+}
+.related_news ul li {
+	display: block;
+}
+
+.related_news .news_block {
+	background: white;
+	padding: 10px 25px 10px 10px;
+	overflow: hidden;
+	margin: 10px;
+}
+.news_thumbnail {
+	// width: 180px;
+}
+.news_thumbnail,
+.related_news .news_block img {
+	// float: left;
+	padding-right: 15px;
+}
+.related_news .news_block .news_thumbnail img {
+	width: 100%;
+}
+.related_news .news_block h3 {
+	font-size: 20px;
+	padding-top: 10px;
+}
+.related_news .news_block p {
+	font-size: 15px;
+	margin-bottom: 0;
+}
+.news_copy {
+	float: left;
+}
+// Hero slideshow
+.owl-nav {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+}
+.owl-nav .owl-prev,
+.owl-nav .owl-next {
+	position: absolute;
+}
+.owl-nav .owl-prev {
+	left: -90px;
+}
+.owl-nav .owl-next {
+	right: -90px;
+}
+.slideshow .owl-carousel .owl-nav button {
+	color: $black;
+	font-size: 100px;
+	outline: none;
+
+	img {
+		width: 10px;
+		// height: 20px;
+	}
+}
+
+.slideshow .slideshow_copy {
+	position: absolute;
+	top: 175px;
+	left: 100px;
+	color: white;
+	width: 505px;
+}
+.slider-content img {
+	width: 260px;
+	margin-bottom: 20px;
+}
+.owl-dots {
+	position: absolute;
+	bottom: -60px;
+	width: 100%;
+}
+// drgnology
+.drgnology {
+
+}
+.drgnology header {
+	text-align: center;
+	font-size: 20px;
+	margin: 0 0 60px;
+}
+.drgnology header h2 {
+	@include josefin_bold;
+	color: $yellow;
+	font-size: 40px;
+	margin-bottom: 5px;
+}
+.drgnology .drgnology_tabs ul li.tab-current .drink_name {
+	opacity: 1;
+  	transition: opacity 0.3s;
+  	-webkit-transition: opacity 0.3s;
+} 
+.drgnology .drgnology_tabs ul li a:hover  {
+	text-decoration: none;
+}
+.drgnology .drgnology_tabs ul li a:hover .drink_name {
+	opacity: 1;
+  	transition: opacity 0.3s;
+  	-webkit-transition: opacity 0.3s;
+}
+.drgnology .drgnology_tabs ul li span {
+	display: block;
+    width: 150px;
+    height: 150px;
+}
+.drgnology .drgnology_tabs .requirement_list span {
+	height: auto
+}
+.drgnology .drgnology_tabs ul li span.icon_01 {
+	background: url(../images/drgnology/icon-rock_grey.png) center bottom no-repeat;
+	background-size: 100px;
+} 
+.drgnology .drgnology_tabs ul li:hover span.icon_01,
+.drgnology .drgnology_tabs ul li.tab-current span.icon_01 {
+	background: url(../images/drgnology/icon-rock_blk.png) center bottom no-repeat;
+	background-size: 100px;
+}
+
+.drgnology .drgnology_tabs ul li span.icon_02 {
+	background: url(../images/drgnology/icon-2_grey.png) center bottom no-repeat;
+	background-size: 85px;
+} 
+.drgnology .drgnology_tabs ul li:hover span.icon_02,
+.drgnology .drgnology_tabs ul li.tab-current span.icon_02 {
+	background: url(../images/drgnology/icon-2.png) center bottom no-repeat;
+	background-size: 85px;
+} 
+
+.drgnology .drgnology_tabs ul li span.icon_03 {
+	background: url(../images/drgnology/icon-3_grey.png) center bottom no-repeat;
+	background-size: 65px;
+} 
+.drgnology .drgnology_tabs ul li:hover span.icon_03,
+.drgnology .drgnology_tabs ul li.tab-current span.icon_03 {
+	background: url(../images/drgnology/icon-3.png) center bottom no-repeat;
+	background-size: 65px;
+}
+
+.drgnology .drgnology_tabs ul li span.icon_04 {
+	background: url(../images/drgnology/icon-1_grey.png) center bottom no-repeat;
+	background-size: 80px;
+} 
+.drgnology .drgnology_tabs ul li.tab-current span.icon_04,
+.drgnology .drgnology_tabs ul li:hover span.icon_04 {
+	background: url(../images/drgnology/icon-1.png) center bottom no-repeat;
+	background-size: 80px;
+} 
+.drink_name {
+	width: 110px;
+	text-align: center;
+	margin: 25px auto 0;
+	border-top: 1px solid $yellow;
+	padding-top: 25px;
+	opacity: 0;
+	transition: opacity 0.3s;
+  	-webkit-transition: opacity 0.3s;
+	p {
+		font-size: 14px;
+		margin-top: 0;
+		line-height: 1.2;
+		color: black;
+	}
+}
+
+.drgnology .drgnology_tabs .tabs_content {
+
+}
+.drgnology .drgnology_tabs .tabs_content .drink_block {
+	padding: 100px 50px 50px!important;
+	// overflow: hidden;
+}
+
+.drgnology .drgnology_tabs .tabs_content .drink_requirements {
+	background: url(../images/drink_bg.jpg) 0 0 no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+.drgnology .drgnology_tabs .tabs_content .drink_requirements .drink_hero {
+	margin: 0 auto 50px;
+	display: block;
+	width: 250px;
+}
+.requirement_list {
+	color: $yellow;
+}
+.requirement_list p {
+	font-size: 15px; 
+	margin:0 0 20px;
+	padding-left: 30px;
+}
+.requirement_list li {
+	display: block;
+	float: left;
+	width: 33.333%;
+	text-align: center;
+	font-size: 14px;
+}
+.requirement_list li span,
+.requirement_list li img {
+	display: block;
+}
+.requirement_list li img {
+	margin: 0 auto 15px;
+}
+.requirement_list li span {
+	font-size: 14px;
+}
+.requirement_list li span {
+	width: 150px;
+	height: 150px;
+
+}
+
+.drink_recipe {
+	background: url(../images/drinks_recipe_bg.jpg) 0 0 no-repeat;
+	background-size: cover;
+}
+.drink_recipe .recipe_slide {
+	width: 390px;
+	margin: 0 auto;
+}
+.drink_recipe .owl-nav .owl-next {
+	right: -30px;
+}
+.drink_recipe .owl-nav .owl-prev {
+    left: -30px;
+}
+
+// Email Signup
+.sign_up {
+	background: url(../images/layout/black_bg.jpg) center center no-repeat;
+	background-size: cover;
+	color: white;
+	padding: 80px 0 0;
+}
+.sign_up h3 {
+	@include josefin_semi_bold;
+	font-size: 27px;
+	text-transform: uppercase;
+}
+.sign_up p {
+	font-size: 14px;
+}
+.sign_up .signup_form {
+	padding-right: 40px;
+}
+.sign_up a {
+	display: block;
+	color: white;
+	font-family: $montserrat;
+	font-weight: 700;
+}
+.sign_up .address {
+	padding-top: 35px;
+	font-size: 14px;
+	color: white;
+}
+.sign_up form {
+	margin-top: -40px;
+}
+
+
+// Media Pack
+.media_pack {
+	padding: 0 15px 100px;
+}
+.media_pack p {
+	width: 670px;
+}
+
+// Ingredients Slick 
+.owl-thumb-item {
+	width: 200px;
+	height: 350px;
+	position: relative;
+	outline: none!important;
+}
+
+.owl-thumb-item.slick-current:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 33px;
+	background: url(../images/ingredients_arrow.png) center center no-repeat;
+	background-size: 37px;
+	top: 0px;
+	left: 0;	
+}
+.owl-thumb-item span {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	color: $lightgrey;
+	color: rgba(250, 250, 250, 0.5);
+	font-size: 25px;
+	text-transform: uppercase;
+}
+.slider-nav button {
+	display: none!important;
+}
+.owl-thumb-item.slick-current span {
+	color: white;
+}
+.owl-thumb-item.black {
+	background: url(../images/ingredients/black.svg) center center no-repeat;
+	background-size: 145px;
+}
+.slick-current.owl-thumb-item.black,
+.owl-thumb-item.black:hover {
+	background: url(../images/ingredients/black_yellow.svg) center center no-repeat;
+	background-size: 145px;
+}
+
+.owl-thumb-item.ginseng {
+	background: url(../images/ingredients/ginseng.svg) center center no-repeat;
+	background-size: 145px;
+}
+.slick-current.owl-thumb-item.ginseng,
+.owl-thumb-item.ginseng:hover {
+	background: url(../images/ingredients/ginseng_yellow.svg) center center no-repeat;
+	background-size: 145px;
+}
+
+.owl-thumb-item.electrolyte {
+	background: url(../images/ingredients/electrolyte.svg) center center no-repeat;
+	background-size: 145px;
+}
+.slick-current.owl-thumb-item.electrolyte,
+.owl-thumb-item.electrolyte:hover {
+	background: url(../images/ingredients/electrolyte_yellow.svg) center center no-repeat;
+	background-size: 145px;
+}
+
+.owl-thumb-item.ginger {
+	background: url(../images/ingredients/ginger.svg) center center no-repeat;
+	background-size: 145px;
+}
+.slick-current.owl-thumb-item.ginger,
+.owl-thumb-item.ginger:hover {
+	background: url(../images/ingredients/ginger_yellow.svg) center center no-repeat;
+	background-size: 145px;
+}
+
+.owl-thumb-item.glutamine {
+	background: url(../images/ingredients/glutamine.svg) center center no-repeat;
+	background-size: 145px;
+}
+.slick-current.owl-thumb-item.glutamine,
+.owl-thumb-item.glutamine:hover {
+	background: url(../images/ingredients/glutamine_yellow.svg) center center no-repeat;
+	background-size: 145px;
+}
+
+.owl-thumb-item.vitamins {
+	background: url(../images/ingredients/vitamins.svg) center center no-repeat;
+	background-size: 145px;
+}
+.slick-current.owl-thumb-item.vitamins,
+.owl-thumb-item.vitamins:hover {
+	background: url(../images/ingredients/vitamins_yellow.svg) center center no-repeat;
+	background-size: 145px;
+}
+
+.owl-thumb-item.tumeric {
+	background: url(../images/ingredients/turmeric.svg) center center no-repeat;
+	background-size: 145px;
+}
+.slick-current.owl-thumb-item.tumeric,
+.owl-thumb-item.tumeric:hover {
+	background: url(../images/ingredients/turmeric_yellow.svg) center center no-repeat;
+	background-size: 125px;
+}
+
+
+
+.wpsisac-slick-slider.design-2 .slick-image-slide .slide-wrap .slider-overlay {
+     background: none;
+     position: relative;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     top: 0;
+     padding: 140px 110px;
+     overflow: hidden;
+}
+.slide_img {
+	// height: 500px;
+	overflow: hidden;
+	position: relative;
+	background-position: center center;
+}
+
+
+// 404 Page
+.error-404 h1 {
+	text-align: center;
+	color: $yellow;
+}
+
+// SHare this 
+.share_options {
+	overflow: hidden;
+	position: relative;
+	padding: 35px 0 0;
+	display: none;
+}
+
+
+
+
+
+@include respond-to(tablet) { 
+	// Banner
+	.banner .banner_content {
+		padding: 90px 20px;
+	}
+	
+	// Story timeline 
+
+	.story_timeline ul li {
+		padding: 25px 0;
+	}
+	.timeline_info {
+		padding: 20px 25px 15px 25px;
+	}
+	.timeline_info h2 {
+		text-transform: uppercase;
+		margin-bottom: 35px;
+	}
+	.story_timeline .timeline_image {
+		padding: 0 40px;
+	}
+	.story_timeline .timeline_image  .post-thumbnail {
+		padding-top: 30px;
+	}
+
+	// About
+	section.about {
+	    padding: 80px 0 30px;
+	}
+	section.about .content_text_block {
+	    width: 100%;
+	    padding-top: 20px;
+	}
+
+	// Ingredients
+	section.ingredients .free_from header {
+	    padding: 0 0 50px;
+	}
+
+	// Hero slideshow 
+	.wpsisac-slick-slider.design-2 .slick-image-slide .slide-wrap .slider-content {
+	    left: 0;
+	    top: 5%;
+	    left: -40%;
+	    width: 300px;
+	}
+
+	// Slignup
+	.contact_details {
+	    padding: 0 0px 35px 30px;
+	    overflow: hidden;
+	}
+	.sign_up .address {
+		float: left;
+	}
+	
+	// News article
+	.news_article .news_item .item_content {
+		padding: 20px;
+		max-width:100%;
+	}
+	.item_content_copy {
+		width: 100%;
+	}
+	.item_content_copy .cta {
+		font-size: 23px;
+		margin-top: 50px;
+		padding: 10px 0;
+		text-align: center;
+		width: 100%;
+	}
+	.article_image {
+		position: relative;
+		top: auto;
+		right: auto;
+	}
+	.article_image img {
+		width: 100%;
+		display: block;
+	}
+}
+
+@include respond-to(mobile) { 
+
+
+	// Arrows 
+	.arrows {
+		display: none;
+	}
+	// Banners
+	.banner .banner_item {
+
+	}
+	.banner .banner_content {
+		padding: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		text-align: center;
+		width: 100%;
+
+		h1 {
+
+		}
+	}
+	.banner_mobile {
+		display: block;
+	}
+	.banner_desktop {
+		display: none;
+	}
+
+
+
+	//About
+	section.about {
+		padding: 35px 0 0;
+	}	
+	section.about .can {
+	    width: 80%;
+	}
+	section.about .content_text_block {
+	    width: 100%;
+	    padding-top: 35px;
+	    padding-bottom: 50px;
+	}
+	section.about .content_text_block .cta {
+		width: 100%;
+	}
+	// Instagram feed 
+	.insta_feed  ul li {
+		width: 50%;
+	}
+	.insta_feed h3 {
+		padding: 0 20px;
+	}
+
+	// Twitter Feed
+	.twitter_feed ul {
+		padding: 30px 30px;
+	}
+	.twitter_handle {
+		padding: 15px 30px;
+	}
+	
+	// Story timeline 
+	.story_timeline {
+		padding: 35px 30px;
+	}
+
+	.story_timeline ul:before,
+	.story_timeline ul li:after {
+		display: none;
+	}
+	.story_timeline ul li {
+		display: block;
+		padding: 0px 0 20px;
+	}
+	.timeline_info {
+		padding: 35px 0px;
+		clear: both;
+	}
+	.timeline_info h2 {
+		margin-bottom: 15px;
+	}
+
+	.ingredient {
+	    padding: 40px 0 0px;
+	}
+
+
+	// News article
+	.news_article .news_item .item_content {
+		padding: 20px;
+		max-width:100%;
+	}
+	.item_content_copy {
+		width: 100%;
+	}
+	.item_content_copy .cta {
+		font-size: 23px;
+		margin-top: 50px;
+		padding: 10px 0;
+		text-align: center;
+		width: 100%;
+	}
+	.article_image {
+		position: relative;
+		top: auto;
+		right: auto;
+	}
+	.article_image img {
+		width: 100%;
+		display: block;
+	}
+
+	// Related News
+	.related_news ul{
+		margin: 0;
+	}
+	.related_news .news_block {
+		padding: 0px 0px 25px;
+		margin: 0 0 10px;
+	}
+	.related_news .news_block img {
+		float: none;
+		padding-right: 0;
+		padding-bottom: 15px;
+		display: block;
+		width: 100%;
+	}
+	.related_news .news_block h3 {
+		font-size: 20px;
+		padding-top: 10px;
+	}
+	.related_news .news_block p {
+		font-size: 15px;
+		margin-bottom: 0;
+	}
+	.news_copy {
+		padding: 15px!important;
+	}
+
+	// Free From
+	section.ingredients .free_from {
+	    margin-top: 100px;
+	}
+	section.ingredients .free_from:before {
+	    width: 80%;
+	    margin: 0 auto 35px;
+	}
+	section.ingredients .free_from header {
+		padding: 0 30px 50px;
+
+		h3 {
+			text-transform: uppercase;
+		}
+	}
+	section.ingredients .free_from h5 {
+		margin-bottom: 15px;
+	}
+	section.ingredients .free_from {
+    	padding: 0px;
+  	}
+	.free_from .colourings {
+		margin-bottom: 35px;
+	}
+	section.ingredients .free_from .free_from_image {
+		text-align: center;
+		margin-bottom: 35px;
+	}
+	section.ingredients .free_from img {
+		float: none;
+		width: 130px;
+		margin-right: 0;
+		margin: 0 auto;
+	}
+
+	// drgnology
+	.drgnology header {
+		margin: 0 30px 35px;
+	}
+	.drgnology header p {
+		font-size: 20px;
+	}
+	.drgnology .drgnology_tabs .tabs_content .drink_block {
+	    padding: 50px 0px 50px !important;
+	}
+	// Drinks
+	.drgnology .drgnology_tabs .drink_name {
+	    width: 110px;
+	    margin: 25px auto 0;
+		border-top: 1px solid transparent;
+	    padding-top: 25px;
+	    opacity: 1;
+	}
+	.drgnology .drgnology_tabs ul li.tab-current .drink_name {
+		border-top: 1px solid $yellow;
+	}
+	// .drgnology .drgnology_tabs .tabs_content .drink_requirements .drink_hero {
+	// 	display: none;
+	// }
+	.slick-slider-short-content img {
+		// display: none!important;
+		width: 100px!important;
+		margin: 0;
+	}
+
+	// Drikns recipe
+	.drink_recipe .recipe_slide {
+		width: 100%;
+		padding: 0 35px;
+	}
+	.drink_recipe .owl-nav .owl-next {
+		right: 5px;
+	}
+	.drink_recipe .owl-nav .owl-prev {
+	    left: 5px;
+	}
+	.drink_recipe .owl-dots {
+	    bottom: -10px;
+	}
+
+	// Email Signup
+	.sign_up {
+		padding: 0 40px;
+	}
+	.sign_up form {
+		margin-top: 0;
+	}
+
+
+	.sign_up .signup_form {
+		padding: 40px 0;
+	}
+	.sign_up .address {
+		padding-top: 35px;
+		font-size: 14px;
+	}
+	// Media Pack
+	.media_pack {
+		padding: 0px 15px 40px;
+	}
+	.media_pack p {
+		width: 100%;
+	}
+
+
+	// Events 
+	.event {
+		padding: 50px 30px;
+		margin: 0 0 10px;
+	}
+	.event a.cta {
+		float: none;
+		display: inline-block;
+		margin: 15px auto;
+		color: white;
+	}
+
+	// Story banner
+	.story_drgn .story_drgn_content {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.owl-thumb-item {
+		margin: 0 20px;
+		background-size: 90%!important;
+	}
+	.owl-thumb-item span {
+		font-size: 14px;
+	}
+	.owl-thumb-item {
+	    height: 235px;
+	}
+	.owl-thumb-item.slick-current:before {
+	    background-size: 22px;
+	}
+	
+
+
+	.drgnology .drgnology_tabs .requirement_list ul li span {
+		width: auto;
+		height: auto;
+	}
+
+	.wpsisac-slick-slider.design-2 .slick-image-slide .slide-wrap .slider-overlay {
+	    padding: 200px 35px;
+	    
+	}
+	.slide_img {
+		background-position: 70% 0!important;
+		min-height: 705px!important;
+	}
+
+	// Instagram
+	
+
+	// ingredients slider nav
+	.ingredient_image {
+		padding-bottom: 35px;
+	}
+	.slick-prev,
+	.slick-next {
+		position: absolute;
+	}
+	.slick-prev {
+		left: -5px;
+		top: 40%;
+	}
+	.slick-next {
+		right: -5px;
+		top: 40%;
+	}
+	.slider-nav {
+		display: none!important;
+	}
+
+}
+
+
+
+
+
+

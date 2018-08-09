@@ -1,0 +1,240 @@
+button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+
+    background: transparent;
+
+    /* inherit font & color from ancestor */
+    color: inherit;
+    font: inherit;
+
+    /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+    line-height: normal;
+
+    /* Corrects font smoothing for webkit */
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+
+    /* Corrects inability to style clickable `input` types in iOS */
+    -webkit-appearance: none;
+}
+
+
+    
+input,
+select,
+textarea
+input[type="text"], 
+input[type="email"], 
+input[type="url"], 
+input[type="password"], 
+input[type="search"], 
+input[type="number"], 
+input[type="tel"], 
+input[type="range"], 
+input[type="date"], 
+input[type="month"], 
+input[type="week"], 
+input[type="time"], 
+input[type="datetime"], 
+input[type="datetime-local"], 
+input[type="color"], 
+textarea {
+    color: $darkgrey;
+    border: 1px solid $yellow;
+    border-radius: 0;
+    padding: 10px;
+    width: 100%;
+
+    &:active,
+    &:hover,
+    &:focus,
+    &:visited {
+        outline: none;
+    }
+}
+
+// Contact us form 
+.wpcf7-form {
+    
+}
+.wpcf7-form select {
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 10px;
+}
+.wpcf7-form br {
+    display: none;
+}
+
+
+.contact_form {
+    width: 100%;
+    overflow: hidden;
+    margin: 100px auto;
+}
+.contact_form h2 {
+    text-transform: uppercase;
+}
+.contact_form .form-item {
+    margin: 0 0 30px;
+}
+.contact_form .wpcf7-submit {
+    @include cta;
+    background: none;
+    font-size: 23px;
+    border-radius: 0;
+    width: auto;
+    padding: 10px 45px;
+}
+
+
+
+
+.contact_details {
+    padding-left: 35px;
+}
+.contact_details h3 {
+    @include josefin_semi_bold;
+    font-size: 27px;
+    text-transform: uppercase;
+}
+.contact_details p {
+    // font-size: 14px;
+    color: #555555;
+}
+
+.contact_details .signup_form {
+    padding-right: 40px;
+}
+.contact_details a {
+    display: block;
+    color: #555555;
+    font-family: $montserrat;
+    font-weight: 400;
+}
+.contact_details .address {
+    padding-top: 10px;
+}
+.contact_details .social_links ul  {
+    text-align: left;
+}
+.contact_details .social_links ul  li a {
+    color: $grey;
+    font-size: 28px;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.contact_details .social_links ul  li a:hover {
+    color: $yellow;
+}
+
+// Email signup
+.email_subscribe input[type="email"] {
+    background: $black;
+    color: $yellow;
+    padding: 5px 10px;
+}
+.email_subscribe .wpcf7-submit {
+    @include cta;
+    background: none;
+    font-size: 14px;
+    border-radius: 0;
+    width: 100%;
+    margin: 0px auto 0;
+    color: white;
+    padding: 10px 0;
+}
+#Enquirytype {
+    width: 96.5%;
+}
+.wpcf7-form select {
+   overflow: hidden;
+   background-image: url(../images/layout/dropdown.png);
+   background-image: url(../images/layout/dropdown.svg);
+   background-repeat: no-repeat;
+   background-position: 98% 16px;
+   background-size: 18px;
+}
+
+
+// Checkboxes 
+.email_newsletter_signup  {
+    font-size: 12px;
+}
+span.wpcf7-list-item {
+    margin: 0;
+    font-size: 12px;
+}
+.wpcf7-checkbox input[type="checkbox"] {
+    width: auto;
+    margin-right: 15px;
+    margin-top: 5px;
+    float: left;
+}
+.wpcf7-checkbox  .wpcf7-list-item-label {
+    float: left;
+    width: 90%;
+}
+.email_newsletter_signup p {
+    padding-left: 25px;
+    font-size: 12px;
+}
+.sign_up .email_newsletter_signup p,
+.email_newsletter_signup a {
+    color: $black;
+    font-size: 12px;
+    font-weight: 400;
+}
+.sign_up .email_newsletter_signup a {
+    font-weight: 400;
+    display: inline-block;
+}
+.sign_up .email_newsletter_signup p {
+    color: white;
+}
+// Signup form 
+.sign_up .signup_form input {
+    background: transparent;
+    color: white;
+}
+
+// Error styling 
+div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
+    border: none;
+}
+.wpcf7-not-valid {
+    border: 1px solid $red!important;
+    color: $red!important;
+}
+.wpcf7-response-output {
+    display: none!important;
+}
+
+@include respond-to(tablet) { 
+    #Enquirytype {
+        width: 48%;
+    }
+}
+@include respond-to(mobile) { 
+
+    .contact_form {
+        width: 100%;
+        margin: 30px auto 0;
+    }
+    .contact_form .wpcf7-submit {
+        margin: 35px auto 10px;
+        display: block;
+    }
+    .contact_details {
+        padding: 0 0 40px;
+    }
+}
+
